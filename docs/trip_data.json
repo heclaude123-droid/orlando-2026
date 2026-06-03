@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Orlando · Space Coast + Disney",
+    "dateRange": "2026-06-06 → 06-10",
+    "nights": "5 天 4 晚",
+    "travelers": "2 大人 + 1 幼儿",
+    "lastUpdated": "2026-06-03",
+    "summaryLine": "✈️ Southwest MDW↔MCO · 🏨 Cape Canaveral 1晚 → Disney 3晚",
+    "privacyNote": "公开分享版：已隐去确认号 / 金额 / 全名。"
+  },
+  "bookings": [
+    { "icon": "✈️", "title": "去程", "tags": ["confirmed"],
+      "lines": ["WN 644 · 6/6 Sat · Southwest（待确认航司）", "MDW 12:50PM → MCO 4:30PM", "nonstop 2h40m · 737-700"] },
+    { "icon": "✈️", "title": "回程", "tags": ["confirmed", "risk"],
+      "lines": ["WN 4762 · 6/10 Wed · Southwest", "MCO 8:10PM → MDW 10:00PM", "nonstop 2h50m · Basic 票档（改签/登机受限）"] },
+    { "icon": "🏨", "title": "Hyatt Place Cape Canaveral", "tags": ["confirmed"],
+      "lines": ["第 1 晚 6/6 · Port Canaveral", "近 Kennedy Space Center · 积分兑换", "评分 4.5/5"] },
+    { "icon": "🏨", "title": "Disney's All-Star Sports", "tags": ["confirmed"],
+      "lines": ["6/7–6/10（3 晚）· Animal Kingdom Resort 区", "check-in after 3PM · 3 客", "Disney 巴士可达乐园 & Disney Springs"] }
+  ],
+  "days": [
+    {
+      "id": "d1", "num": "D1", "date": "6/6 Sat", "theme": "抵达 + 转场 Cape Canaveral", "intensity": "low",
+      "anchors": [
+        { "text": "✈️ WN644 MCO 落地 16:30", "tags": ["confirmed"] },
+        { "text": "🏨 Hyatt Place Cape Canaveral 第 1 晚", "tags": ["confirmed"] }
+      ],
+      "timeline": [
+        { "time": "4:30 PM", "desc": "MCO 落地", "tags": ["confirmed"] },
+        { "time": "4:30–5:30", "desc": "取行李 + 取租车", "note": "租车未订(Q1)，带幼儿留足时间", "tags": ["verify"] },
+        { "time": "5:30–6:20", "desc": "自驾 MCO→Cape Canaveral", "note": "~48min / 45.5mi（推测）" },
+        { "time": "6:30–7:00", "desc": "Hyatt 入住安顿" },
+        { "time": "7:00–8:30", "desc": "就近晚餐，幼儿早休息", "tags": ["kid"] }
+      ],
+      "food": ["晚餐(就近)：Shark Pit(有鱼缸·幼儿爱) / Zarrella's(披萨·近) / Rusty's·Fishlips(港口海鲜)｜待核实营业"],
+      "transport": ["自驾为主；租车是 Day1 关键未决项。"],
+      "planB": "航班延误/落地晚 → 跳过正式晚餐，外带回酒店，幼儿优先休息。",
+      "risk": { "text": "落地+取车+车程 → 实际到店约 6:30–7PM，晚餐别订太早太远；租车未订接驳悬空。", "tags": ["risk"] }
+    },
+    {
+      "id": "d2", "num": "D2", "date": "6/7 Sun", "theme": "Kennedy Space Center 上午 + 转场 Disney", "intensity": "mid",
+      "intensityLabel": "中高",
+      "anchors": [
+        { "text": "🏨 Hyatt 退房（上午）", "tags": ["confirmed"] },
+        { "text": "🏨 Disney All-Star Sports check-in after 3PM", "tags": ["confirmed"] }
+      ],
+      "timeline": [
+        { "time": "7:30–8:30", "desc": "起床/早餐/退房装车" },
+        { "time": "9:00", "desc": "KSC 开门入园（距 Hyatt ~20min）", "note": "票未买·发射日不开放", "tags": ["tentative", "verify"] },
+        { "time": "9:00–12:30", "desc": "KSC 半天：火箭花园·巴士游·Atlantis 航天飞机", "tags": ["kid", "tentative"] },
+        { "time": "12:30–1:30", "desc": "午餐（园内或返程路上）" },
+        { "time": "1:30–2:30", "desc": "自驾→Disney ~1hr，幼儿车上午睡", "tags": ["kid"] },
+        { "time": "3:00–4:00", "desc": "Disney 入住安顿", "tags": ["confirmed"] },
+        { "time": "4:00–6:00", "desc": "泳池/休息适应", "tags": ["kid"] },
+        { "time": "6:30–8:00", "desc": "晚餐：度假村食阁 或 Disney Springs" }
+      ],
+      "food": ["午餐：KSC 园内(快餐·选择少) 或离园路上｜待核实", "晚餐：All-Star Sports「End Zone」食阁 / Disney Springs(免门票)"],
+      "transport": ["自驾：Hyatt→KSC ~20min；KSC→Disney ~1hr（推测）。"],
+      "planB": "⭐ 当天太赶/幼儿状态差 → 缩短或跳过 KSC，直接转 Disney，下午留给度假村适应。KSC 是本行程最可砍的高价值项。",
+      "risk": { "text": "当天最满：退房+KSC+1hr车程+3PM check-in，对 2 岁幼儿高负荷 → 严格半天 KSC、中午前撤。KSC 发射日不开放，临行前 1–2 天核实。", "tags": ["risk"] }
+    },
+    {
+      "id": "d3", "num": "D3", "date": "6/8 Mon", "theme": "Disney 乐园日 1", "intensity": "high",
+      "anchors": [ { "text": "🏨 Disney All-Star Sports（住）", "tags": ["confirmed"] } ],
+      "timeline": [
+        { "time": "7:00–8:00", "desc": "早餐+出发（早到避正午暴晒）", "tags": ["kid"] },
+        { "time": "8:30–9:00", "desc": "进园（建议 Magic Kingdom）", "note": "票未确认(Q2)·园待定(Q3)", "tags": ["tentative"] },
+        { "time": "9:00–12:30", "desc": "上午主玩：幼儿向设施·巡游" },
+        { "time": "12:30–1:30", "desc": "园内午餐" },
+        { "time": "1:30–3:30", "desc": "回度假村午睡/泳池（避正午+下午雷雨）", "tags": ["kid", "risk"] },
+        { "time": "4:00–6:30", "desc": "二次进园 或 泳池（看体力）" },
+        { "time": "6:30–8:00", "desc": "晚餐" }
+      ],
+      "food": ["午餐：园内 quick-service（MK: Pecos Bill / Cosmic Ray's）｜待核实", "晚餐：度假村 / Disney Springs；想角色餐｜建议预约"],
+      "transport": ["Disney 巴士（度假村↔乐园）；幼儿午睡回房方便。"],
+      "planB": "下午雷阵雨 → 室内项目/度假村/泳池；幼儿累 → 砍二次进园，泳池+早晚餐。",
+      "risk": { "text": "6月 ~87°F + 14–17点雷阵雨高发 → 午后回房同时解决午睡+避暑+避雨（待核实天气）。可能 ~10AM 有 SpaceX 发射，远眺或可见。", "tags": ["risk", "verify"] }
+    },
+    {
+      "id": "d4", "num": "D4", "date": "6/9 Tue", "theme": "Disney 乐园日 2", "intensity": "high",
+      "anchors": [ { "text": "🏨 Disney All-Star Sports（住）", "tags": ["confirmed"] } ],
+      "timeline": [
+        { "time": "全天", "desc": "与 Day3 同节奏，换另一个园（默认建议 Animal Kingdom：离 All-Star Sports 最近、动物主题适合幼儿；或按 Q3 你的选择）", "tags": ["tentative"] },
+        { "time": "午后", "desc": "保留回房午睡 + 避雷雨窗口", "tags": ["kid"] }
+      ],
+      "food": ["午餐园内 quick-service；晚餐度假村/Disney Springs｜待核实"],
+      "transport": ["Disney 巴士。"],
+      "planB": "连续两个乐园日易疲劳 → Day4 可降为「半天园 + 半天泳池」，避免暴走。",
+      "risk": { "text": "避免 D3+D4 连续高强度，至少一天留半日缓冲。", "tags": ["risk"] }
+    },
+    {
+      "id": "d5", "num": "D5", "date": "6/10 Wed", "theme": "Disney 上午轻松 + 返程", "intensity": "mid",
+      "intensityLabel": "低中",
+      "anchors": [
+        { "text": "🏨 Disney 退房（约 11AM）", "tags": ["confirmed"] },
+        { "text": "✈️ WN4762 MCO 起飞 20:10", "tags": ["confirmed"] }
+      ],
+      "timeline": [
+        { "time": "上午", "desc": "轻松：泳池 / Disney Springs / 短逛一个园（看有无当天票）" },
+        { "time": "~11:00", "desc": "退房，行李交 Bell Services 寄存" },
+        { "time": "中午–下午", "desc": "午餐 + 低强度活动（幼儿不暴走）", "tags": ["kid"] },
+        { "time": "~5:00 PM", "desc": "取行李 + 还租车 + 去 MCO" },
+        { "time": "~6:10 PM", "desc": "到 MCO（起飞前 ~2hr）" },
+        { "time": "8:10 PM", "desc": "起飞回 MDW", "tags": ["confirmed"] }
+      ],
+      "food": ["午餐 Disney Springs / 度假村；晚餐机场/飞机上｜待核实"],
+      "transport": ["退房(11AM)与航班(8:10PM)间大段空窗 → 行李寄存 + 轻松活动；还车留缓冲。"],
+      "planB": "幼儿午后崩溃 → 提前到机场更稳；雷雨/延误 → 提前查 WN4762（Basic 改签受限）。",
+      "risk": { "text": "退房到登机近 9 小时 + 幼儿 → 别硬塞乐园，安排可随时撤的轻松活动 + 行李寄存。", "tags": ["risk", "kid"] }
+    }
+  ],
+  "questions": [
+    { "q": "租车订了吗？MCO↔Cape Canaveral↔Disney 需自驾。", "label": "Q1", "badge": "最高优先" },
+    { "q": "Disney 乐园票买了吗？几日票？含 Park Hopper / Memory Maker？", "label": "Q2" },
+    { "q": "6/8 & 6/9 想去哪几个园？（幼儿向首选 Magic Kingdom）", "label": "Q3" },
+    { "q": "周日 6/7 上午去 KSC 吗？（唯一窗口，但当天转场偏赶）", "label": "Q4" },
+    { "q": "Disney 餐厅订了吗 / 要不要必抢清单？", "label": "Q5" }
+  ],
+  "verify": [
+    "天气（雷雨/高温微调节奏）· KSC 开放 & 发射日 · 航班准点 · 餐厅营业 · 乐园时间/巡游/烟花 · 租车取还",
+    "幼儿：推车 · 安全座椅 · 防晒/遮阳 · 补水零食 · 午睡安抚物 · 泳池装备"
+  ]
+}

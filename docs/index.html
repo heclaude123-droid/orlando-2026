@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Orlando 2026 行程</title>
+<style>
+  :root{
+    --bg:#f4f6fb; --card:#fff; --ink:#1f2733; --sub:#64748b; --line:#e6eaf1; --accent:#3a5fa8;
+    --c-confirmed:#16a34a; --c-confirmed-bg:#e7f7ed;
+    --c-tentative:#d97706; --c-tentative-bg:#fdf3e3;
+    --c-verify:#2563eb;    --c-verify-bg:#e8f0fe;
+    --c-risk:#dc2626;      --c-risk-bg:#fdecec;
+    --c-kid:#9333ea;       --c-kid-bg:#f5e9fd;
+    --c-resv:#0d9488;      --c-resv-bg:#e3f6f4;
+    --lo:#16a34a; --mid:#d97706; --hi:#dc2626;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Segoe UI",system-ui,sans-serif;
+    background:var(--bg);color:var(--ink);font-size:16.5px;line-height:1.6;padding-bottom:48px}
+  header{position:sticky;top:0;z-index:30;background:linear-gradient(135deg,#3a5fa8,#5478c6);
+    color:#fff;padding:14px 16px 12px;box-shadow:0 2px 10px rgba(20,40,80,.18)}
+  header h1{margin:0;font-size:20px;font-weight:800;letter-spacing:.3px}
+  header .sum{margin-top:5px;font-size:13px;opacity:.95;line-height:1.5}
+  header .sum b{font-weight:700}
+  .bar{position:sticky;top:84px;z-index:20;background:var(--bg);padding:9px 10px 4px;border-bottom:1px solid var(--line)}
+  .pills{display:flex;gap:7px;overflow-x:auto;padding-bottom:6px;-webkit-overflow-scrolling:touch}
+  .pills::-webkit-scrollbar{display:none}
+  .pill{flex:none;border:1px solid var(--line);background:#fff;color:var(--accent);border-radius:999px;
+    padding:7px 13px;font-size:13.5px;font-weight:600;text-decoration:none;white-space:nowrap}
+  .pill:active{background:#eef2fb}
+  .filters{display:flex;gap:7px;overflow-x:auto;padding:7px 0 2px}
+  .filters::-webkit-scrollbar{display:none}
+  .fbtn{flex:none;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;
+    font-size:12.5px;font-weight:600;color:var(--sub);cursor:pointer}
+  .fbtn.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  main{padding:12px 12px 0}
+  h2.sec{font-size:14px;color:var(--sub);font-weight:700;margin:18px 4px 8px}
+  .tag{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin:1px 3px 1px 0;white-space:nowrap;vertical-align:middle}
+  .t-confirmed{color:var(--c-confirmed);background:var(--c-confirmed-bg)}
+  .t-tentative{color:var(--c-tentative);background:var(--c-tentative-bg)}
+  .t-verify{color:var(--c-verify);background:var(--c-verify-bg)}
+  .t-risk{color:var(--c-risk);background:var(--c-risk-bg)}
+  .t-kid{color:var(--c-kid);background:var(--c-kid-bg)}
+  .t-resv{color:var(--c-resv);background:var(--c-resv-bg)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:12px;overflow:hidden;box-shadow:0 1px 3px rgba(30,50,90,.05)}
+  .booking{padding:13px 15px}
+  .booking .b-title{font-weight:700;font-size:16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .booking .b-row{font-size:14px;color:var(--sub);margin-top:4px}
+  details.day{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:12px;overflow:hidden;box-shadow:0 1px 3px rgba(30,50,90,.05)}
+  details.day>summary{list-style:none;cursor:pointer;padding:14px 15px;display:flex;align-items:center;gap:10px}
+  details.day>summary::-webkit-details-marker{display:none}
+  .daynum{flex:none;width:34px;height:34px;border-radius:10px;background:var(--accent);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+  .dhead{flex:1;min-width:0}
+  .dhead .dt{font-size:13px;color:var(--sub);font-weight:600}
+  .dhead .th{font-size:16px;font-weight:700;line-height:1.35}
+  .intensity{flex:none;font-size:11px;font-weight:800;padding:3px 9px;border-radius:999px}
+  .i-low{color:#fff;background:var(--lo)} .i-mid{color:#fff;background:var(--mid)} .i-high{color:#fff;background:var(--hi)}
+  .chev{flex:none;color:var(--sub);transition:transform .2s;font-size:18px}
+  details.day[open]>summary .chev{transform:rotate(90deg)}
+  .dbody{padding:0 15px 15px}
+  .blk{margin-top:13px}
+  .blk h4{margin:0 0 6px;font-size:13px;font-weight:800;color:var(--accent);display:flex;align-items:center;gap:6px}
+  .anchor{background:var(--c-confirmed-bg);border-left:3px solid var(--c-confirmed);border-radius:8px;padding:8px 10px;font-size:14px;margin-bottom:6px}
+  .tl{list-style:none;margin:0;padding:0}
+  .tl li{display:flex;gap:10px;padding:7px 0;border-top:1px dashed var(--line)}
+  .tl li:first-child{border-top:none}
+  .tl .tm{flex:none;width:78px;font-size:12.5px;font-weight:700;color:var(--accent);padding-top:1px}
+  .tl .ds{flex:1;font-size:14px}
+  .tl .ds .note{display:block;font-size:12px;color:var(--sub);margin-top:1px}
+  ul.lst{margin:0;padding-left:18px;font-size:14px}
+  ul.lst li{margin:4px 0}
+  .pb{background:#f0f4fb;border-radius:8px;padding:8px 10px;font-size:13.5px;margin-top:4px}
+  .rk{background:var(--c-risk-bg);border-radius:8px;padding:8px 10px;font-size:13.5px;color:#7f1d1d;margin-top:4px}
+  body.filtering .taggable{opacity:.22;transition:opacity .15s}
+  body.filtering .taggable.match{opacity:1}
+  .qbox{background:#fff;border:1px solid var(--line);border-radius:16px;padding:6px 15px 13px;margin-bottom:12px}
+  .q{padding:11px 0;border-top:1px solid var(--line);font-size:14.5px}
+  .q:first-of-type{border-top:none}
+  .q b{color:var(--accent)}
+  footer{text-align:center;color:var(--sub);font-size:12px;padding:18px 16px 8px}
+  .updated{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 12px}
+  #err{display:none;margin:40px 16px;padding:16px;background:#fff;border:1px solid var(--line);border-radius:14px;color:var(--sub);font-size:14px;line-height:1.7}
+  #err b{color:var(--ink)}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="h-title">🌴 行程加载中…</h1>
+  <div class="sum" id="h-sum"></div>
+</header>
+<div class="bar">
+  <div class="pills" id="pills"></div>
+  <div class="filters" id="filters">
+    <button class="fbtn on" data-f="all">全部</button>
+    <button class="fbtn" data-f="confirmed">已确认</button>
+    <button class="fbtn" data-f="tentative">暂定</button>
+    <button class="fbtn" data-f="verify">待核实</button>
+    <button class="fbtn" data-f="risk">风险</button>
+    <button class="fbtn" data-f="kid">幼儿</button>
+  </div>
+</div>
+<main id="app"></main>
+<div id="err"></div>
+<footer><span class="updated" id="foot">加载中…</span></footer>
+
+<script>
+var TAGS={confirmed:["t-confirmed","已确认"],tentative:["t-tentative","暂定"],verify:["t-verify","待核实"],risk:["t-risk","风险"],kid:["t-kid","幼儿"],resv:["t-resv","建议预约"]};
+var INTEN={low:["i-low","低"],mid:["i-mid","中高"],high:["i-high","高"]};
+
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function tagHtml(arr){return (arr||[]).map(function(t){var m=TAGS[t];return m?'<span class="tag '+m[0]+'">'+m[1]+'</span>':''}).join('')}
+function tagAttr(arr){return (arr&&arr.length)?' taggable" data-tags="'+arr.join(' '):''}
+
+function render(d){
+  // header
+  document.getElementById('h-title').innerHTML='🌴 '+esc(d.meta.title);
+  document.getElementById('h-sum').innerHTML='<b>'+esc(d.meta.dateRange)+'</b> · '+esc(d.meta.nights)+' · '+esc(d.meta.travelers)+'<br>'+esc(d.meta.summaryLine);
+  document.getElementById('foot').textContent='最后更新 '+d.meta.lastUpdated+' · '+(d.meta.privacyNote||'');
+
+  var app=document.getElementById('app'), html='';
+
+  // bookings
+  html+='<h2 class="sec" id="bookings">📋 已确认预订（硬约束）</h2>';
+  (d.bookings||[]).forEach(function(b){
+    html+='<div class="card booking'+tagAttr(b.tags)+'">';
+    html+='<div class="b-title">'+esc(b.icon)+' '+esc(b.title)+' '+tagHtml(b.tags)+'</div>';
+    (b.lines||[]).forEach(function(l){html+='<div class="b-row">'+esc(l)+'</div>'});
+    html+='</div>';
+  });
+
+  // days
+  html+='<h2 class="sec">🗓️ 逐日行程</h2>';
+  (d.days||[]).forEach(function(day,i){
+    var inten=INTEN[day.intensity]||INTEN.mid;
+    var ilabel=day.intensityLabel||inten[1];
+    html+='<details class="day" id="'+esc(day.id)+'"'+(i===0?' open':'')+'>';
+    html+='<summary><span class="daynum">'+esc(day.num)+'</span>';
+    html+='<span class="dhead"><span class="dt">'+esc(day.date)+'</span><span class="th">'+esc(day.theme)+'</span></span>';
+    html+='<span class="intensity '+inten[0]+'">'+esc(ilabel)+'</span><span class="chev">›</span></summary>';
+    html+='<div class="dbody">';
+    if(day.anchors&&day.anchors.length){
+      html+='<div class="blk"><h4>⚓ 已确认锚点</h4>';
+      day.anchors.forEach(function(a){html+='<div class="anchor'+tagAttr(a.tags)+'">'+esc(a.text)+'</div>'});
+      html+='</div>';
+    }
+    if(day.timeline&&day.timeline.length){
+      html+='<div class="blk"><h4>🕒 时间线</h4><ul class="tl">';
+      day.timeline.forEach(function(t){
+        html+='<li><span class="tm">'+esc(t.time)+'</span><span class="ds'+tagAttr(t.tags)+'">'+esc(t.desc);
+        if(t.note)html+='<span class="note">'+esc(t.note)+'</span>';
+        if(t.tags&&t.tags.length)html+=' '+tagHtml(t.tags);
+        html+='</span></li>';
+      });
+      html+='</ul></div>';
+    }
+    if(day.food&&day.food.length){
+      html+='<div class="blk"><h4>🍽️ 餐饮</h4><ul class="lst">';
+      day.food.forEach(function(f){html+='<li>'+esc(f)+'</li>'});
+      html+='</ul></div>';
+    }
+    if(day.transport&&day.transport.length){
+      html+='<div class="blk"><h4>🚗 交通</h4><ul class="lst">';
+      day.transport.forEach(function(f){html+='<li>'+esc(f)+'</li>'});
+      html+='</ul></div>';
+    }
+    if(day.planB){html+='<div class="blk"><h4>🔁 Plan B</h4><div class="pb">'+esc(day.planB)+'</div></div>'}
+    if(day.risk){html+='<div class="blk"><h4>⚠️ 风险</h4><div class="rk'+tagAttr(day.risk.tags)+'">'+esc(day.risk.text)+'</div></div>'}
+    html+='</div></details>';
+  });
+
+  // questions
+  if(d.questions&&d.questions.length){
+    html+='<h2 class="sec" id="todo">❓ 待拍板（下一步最该确认）</h2><div class="qbox">';
+    d.questions.forEach(function(q){
+      html+='<div class="q"><b>'+esc(q.label)+'</b> '+esc(q.q)+(q.badge?' <span class="tag t-risk">'+esc(q.badge)+'</span>':'')+'</div>';
+    });
+    html+='</div>';
+  }
+  // verify
+  if(d.verify&&d.verify.length){
+    html+='<h2 class="sec">🎒 临行前 1–2 天再核实</h2><div class="qbox">';
+    d.verify.forEach(function(v){html+='<div class="q taggable" data-tags="verify">'+esc(v)+'</div>'});
+    html+='</div>';
+  }
+  app.innerHTML=html;
+
+  // nav pills
+  var pills='<a class="pill" href="#bookings">📋 已确认</a>';
+  (d.days||[]).forEach(function(day){pills+='<a class="pill" href="#'+esc(day.id)+'">'+esc(day.num)+' '+esc(day.date.split(' ')[0])+'</a>'});
+  pills+='<a class="pill" href="#todo">❓待办</a>';
+  document.getElementById('pills').innerHTML=pills;
+
+  setupFilter();
+}
+
+function setupFilter(){
+  var bar=document.getElementById('filters'), btns=bar.querySelectorAll('.fbtn');
+  bar.onclick=function(e){
+    var b=e.target.closest('.fbtn'); if(!b)return;
+    btns.forEach(function(x){x.classList.remove('on')}); b.classList.add('on');
+    var f=b.dataset.f, items=document.querySelectorAll('.taggable');
+    if(f==='all'){document.body.classList.remove('filtering');items.forEach(function(i){i.classList.remove('match')});return}
+    document.body.classList.add('filtering');
+    items.forEach(function(i){i.classList.toggle('match',(i.dataset.tags||'').split(/\s+/).indexOf(f)>-1)});
+    document.querySelectorAll('details.day').forEach(function(dd){if(dd.querySelector('.taggable.match'))dd.open=true});
+  };
+}
+
+function showErr(){
+  document.getElementById('err').style.display='block';
+  document.getElementById('err').innerHTML='<b>无法加载行程数据</b><br>如果你是直接双击打开本文件（file://），浏览器会拦截数据读取。<br>请用<b>分享链接</b>打开，或在本地用 <code>npx serve</code> 起一个本地服务器。';
+  document.getElementById('h-title').innerHTML='🌴 Orlando 2026';
+}
+
+// no-store 让每次刷新拿最新数据（配合 GitHub Pages 更新）
+fetch('./trip_data.json',{cache:'no-store'})
+  .then(function(r){if(!r.ok)throw 0;return r.json()})
+  .then(render)
+  .catch(showErr);
+</script>
+</body>
+</html>
