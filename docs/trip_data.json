@@ -40,26 +40,25 @@
       "risk": { "text": "落地+取车+车程 → 实际到店约 6:30–7PM，晚餐别订太早太远；Alamo 取车预约 6PM，落地早可提前取。", "tags": ["risk"] }
     },
     {
-      "id": "d2", "num": "D2", "date": "6/7 Sun", "theme": "Kennedy Space Center 上午 + 转场 Disney", "intensity": "mid",
-      "intensityLabel": "中高",
+      "id": "d2", "num": "D2", "date": "6/7 Sun", "theme": "SpaceX 发射观看 + 放松转场 Disney", "intensity": "mid",
+      "intensityLabel": "中·早起",
       "anchors": [
+        { "text": "🚀 SpaceX 发射观看 ~6:30AM（计划，时间待核实）", "tags": ["tentative", "verify"] },
         { "text": "🏨 Hyatt 退房（上午）", "tags": ["confirmed"] },
         { "text": "🏨 Disney All-Star Sports check-in after 3PM", "tags": ["confirmed"] }
       ],
       "timeline": [
-        { "time": "7:30–8:30", "desc": "起床/早餐/退房装车" },
-        { "time": "9:00", "desc": "KSC 开门入园（距 Hyatt ~20min）", "note": "票未买·发射日不开放", "tags": ["tentative", "verify"] },
-        { "time": "9:00–12:30", "desc": "KSC 半天：火箭花园·巴士游·Atlantis 航天飞机", "tags": ["kid", "tentative"] },
-        { "time": "12:30–1:30", "desc": "午餐（园内或返程路上）" },
-        { "time": "1:30–2:30", "desc": "自驾→Disney ~1hr，幼儿车上午睡", "tags": ["kid"] },
-        { "time": "3:00–4:00", "desc": "Disney 入住安顿", "tags": ["confirmed"] },
-        { "time": "4:00–6:00", "desc": "泳池/休息适应", "tags": ["kid"] },
-        { "time": "6:30–8:00", "desc": "晚餐：度假村食阁 或 Disney Springs" }
+        { "time": "清晨", "desc": "SpaceX 发射观看（Jetty Park / Port Canaveral 附近）", "note": "约 6:30AM 窗口·可能延/scrub，临行确认", "tags": ["tentative", "verify"] },
+        { "time": "上午", "desc": "回酒店早餐 + 退房；KSC 改为可选（发射已满足太空体验）", "tags": ["kid"] },
+        { "time": "午间", "desc": "自驾 → Disney（~1hr，幼儿车上午睡）", "tags": ["kid"] },
+        { "time": "3:00 PM", "desc": "Disney 入住安顿", "tags": ["confirmed"] },
+        { "time": "下午", "desc": "泳池 / 休息（早起后补觉）", "tags": ["kid"] },
+        { "time": "晚", "desc": "晚餐：度假村食阁 或 Disney Springs" }
       ],
-      "food": ["午餐：KSC 园内(快餐·选择少) 或离园路上｜待核实", "晚餐：All-Star Sports「End Zone」食阁 / Disney Springs(免门票)"],
-      "transport": ["自驾：Hyatt→KSC ~20min；KSC→Disney ~1hr（推测）。"],
-      "planB": "⭐ 当天太赶/幼儿状态差 → 缩短或跳过 KSC，直接转 Disney，下午留给度假村适应。KSC 是本行程最可砍的高价值项。",
-      "risk": { "text": "当天最满：退房+KSC+1hr车程+3PM check-in，对 2 岁幼儿高负荷 → 严格半天 KSC、中午前撤。KSC 发射日不开放，临行前 1–2 天核实。", "tags": ["risk"] }
+      "food": ["午餐：转场路上 或 Disney 落地后｜待核实", "晚餐：All-Star Sports「End Zone」食阁 / Disney Springs(免门票)"],
+      "transport": ["自驾：清晨就近观看点；午间 → Disney ~1hr（幼儿车上午睡）。"],
+      "planB": "发射可能 scrub/延迟 → 睡个回笼觉，改轻松转场；KSC 可选不强求，别为发射牺牲全天体力。",
+      "risk": { "text": "幼儿清晨早起看发射 → 当天别再排满；午间车上补觉，下午度假村放松。发射时间可能延/scrub，临行确认。", "tags": ["risk", "verify"] }
     },
     {
       "id": "d3", "num": "D3", "date": "6/8 Mon", "theme": "Disney 乐园日 1", "intensity": "high",
