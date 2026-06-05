@@ -45,8 +45,8 @@
       ]
     },
     {
-      "id": "d2", "num": "D2", "date": "6/12 Fri", "theme": "KSC 半天 → Disney 入住", "intensity": "mid",
-      "intensityLabel": "中",
+      "id": "d2", "num": "D2", "date": "6/12 Fri", "theme": "KSC 半天 → Disney 入住 → 水乐园(赠送)", "intensity": "mid",
+      "intensityLabel": "中高",
       "anchors": [
         { "text": "🚀 KSC 9AM 基础票（火箭花园+巴士游+Atlantis）", "tags": ["tentative"] },
         { "text": "🏨 Disney All-Star Movies check-in after 3PM", "tags": ["confirmed"] }
@@ -55,12 +55,13 @@
         { "time": "上午", "desc": "Hilton 退房 → KSC（基础 Daily Admission）", "note": "含火箭花园·巴士游·Atlantis·Planet Play(幼儿)", "tags": ["kid"] },
         { "time": "午间", "desc": "午餐 → 自驾 Disney（~1hr，幼儿车上午睡）", "tags": ["kid"] },
         { "time": "3:00 PM", "desc": "Disney All-Star Movies 入住安顿", "tags": ["confirmed"] },
-        { "time": "下午/晚", "desc": "泳池 / 休息 · 晚餐(度假村 或 Disney Springs)", "tags": ["kid"] }
+        { "time": "下午", "desc": "check-in 当天酒店赠送的 Disney 水乐园（幼儿戏水区）", "note": "免费 · 只此日", "tags": ["kid"] },
+        { "time": "晚", "desc": "晚餐：度假村食阁 / Disney Springs" }
       ],
       "food": ["午餐：KSC 园内 或离园路上｜待核实", "晚餐：度假村食阁 / Disney Springs"],
       "transport": ["自驾：Hilton→KSC ~20min；KSC→Disney ~1hr。到园后 Disney 巴士。"],
-      "planB": "幼儿累/天热 → KSC 只玩火箭花园+Atlantis，早点转 Disney。",
-      "risk": { "text": "KSC 半天 + 转场已是一天；带娃挑重点(巴士游≥2hr)。", "tags": ["risk"] },
+      "planB": "当天最满 → KSC 精简(火箭花园+Atlantis)留体力；水乐园玩幼儿戏水区即可。",
+      "risk": { "text": "KSC + 转场 + 水乐园 = 当天最满，对 2 岁娃偏重 → 精简 KSC、水乐园别久泡。", "tags": ["risk"] },
       "nav": [
         { "label": "Kennedy Space Center", "url": "https://www.google.com/maps/dir/?api=1&destination=Kennedy+Space+Center+Visitor+Complex" },
         { "label": "Disney All-Star Movies", "url": "https://www.google.com/maps/dir/?api=1&destination=Disney+All-Star+Movies+Resort" }
@@ -87,14 +88,14 @@
       ]
     },
     {
-      "id": "d4", "num": "D4", "date": "6/14 Sun", "theme": "Disney 退房 → Waldorf 享受", "intensity": "mid",
+      "id": "d4", "num": "D4", "date": "6/14 Sun", "theme": "MK 上午 → Disney 退房 → Waldorf 享受", "intensity": "mid",
       "intensityLabel": "中",
       "anchors": [
-        { "text": "🏨 Disney 退房（约 11AM）", "tags": ["confirmed"] },
-        { "text": "🏨 Waldorf Astoria 入住 · Hilton Diamond 行政酒廊", "tags": ["confirmed"] }
+        { "text": "🎢 Magic Kingdom（2 天票第 2 天）", "tags": ["confirmed"] },
+        { "text": "🏨 Disney 退房（约 11AM）→ Waldorf 入住 · Diamond 行政酒廊", "tags": ["confirmed"] }
       ],
       "timeline": [
-        { "time": "上午", "desc": "Disney 退房（11AM）；可选 Magic Kingdom 半天 或 Disney Springs", "note": "票/园待你定", "tags": ["tentative", "kid"] },
+        { "time": "上午", "desc": "Magic Kingdom（rope-drop，幼儿经典 Fantasyland）+ Disney 退房", "note": "退房可交 Bell Services", "tags": ["kid"] },
         { "time": "下午", "desc": "入住 Waldorf Astoria → 行政酒廊 + 泳池放松", "note": "Diamond 行政酒廊傍晚小食", "tags": ["confirmed", "kid"] },
         { "time": "晚", "desc": "Waldorf 一带晚餐 或 行政酒廊", "tags": ["kid"] }
       ],
@@ -130,9 +131,7 @@
     }
   ],
   "questions": [
-    { "q": "Disney 乐园票买了吗？几日票？含 Park Hopper / Memory Maker？", "label": "Q1", "badge": "最高优先" },
-    { "q": "6/14 退房后：去 Magic Kingdom 半天，还是直接 Waldorf 放松？", "label": "Q2" },
-    { "q": "Disney 餐厅订了吗 / 要不要必抢清单？", "label": "Q3" }
+    { "q": "Disney 餐厅订了吗 / 要不要「幼儿友好 + 建议提前抢」清单？", "label": "Q1" }
   ],
   "verify": [
     "天气（雷雨/高温微调节奏）· 航班准点 · 餐厅营业 · 乐园时间 · 租车取还日期",
