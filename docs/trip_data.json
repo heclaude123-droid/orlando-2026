@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Orlando · Disney",
+    "title": "Orlando · Space Coast + Disney",
     "dateRange": "2026-06-11 → 06-15",
     "nights": "5 天 4 晚",
     "travelers": "4 大人 + 1 幼儿",
     "lastUpdated": "2026-06-04",
-    "summaryLine": "✈️ MDW↔MCO · 🚗 SUV 自驾 · 🏨 Disney 6/12-15 · 6/11 首晚待定",
+    "summaryLine": "✈️ MDW↔MCO · 🚗 SUV · 🏨 Cape Canaveral → Disney → Waldorf",
     "privacyNote": "公开分享版：已隐去确认号 / 金额 / 全名。"
   },
   "bookings": [
@@ -14,123 +14,129 @@
     { "icon": "✈️", "title": "回程", "tags": ["confirmed"],
       "lines": ["WN 2659 · 6/15 周一", "MCO 6:10PM → MDW 8:10PM", "nonstop 3h0m · Choice"] },
     { "icon": "🚗", "title": "租车 Standard SUV", "tags": ["confirmed"],
-      "lines": ["Chevrolet Equinox or similar（5 座/5 行李）", "MCO 取还 · 取还日期待确认", "自动挡 · 需备幼儿安全座椅"] },
-    { "icon": "🏨", "title": "Disney's All-Star Sports", "tags": ["confirmed"],
-      "lines": ["6/12–6/15（3 晚）· Animal Kingdom Resort 区", "check-in after 3PM", "Disney 巴士可达乐园 & Disney Springs"] },
-    { "icon": "🏨", "title": "6/11 首晚住宿", "tags": ["tentative"],
-      "lines": ["待确认（抵达 6/11，Disney 6/12 才开始）", "决定首日是否去太空海岸 / KSC"] }
+      "lines": ["Chevrolet Equinox or similar（5 座）", "MCO 取还 · 取还日期待确认", "需备幼儿安全座椅"] },
+    { "icon": "🏨", "title": "Hilton Garden Inn Cape Canaveral", "tags": ["confirmed"],
+      "lines": ["6/11–6/12（首晚）· 太空海岸", "→ 6/12 顺路 Kennedy Space Center"] },
+    { "icon": "🏨", "title": "Disney's All-Star Movies", "tags": ["confirmed"],
+      "lines": ["6/12–6/14（2 晚）· Animal Kingdom Resort 区", "check-in after 3PM · Disney 巴士可达乐园"] },
+    { "icon": "🏨", "title": "Waldorf Astoria Orlando", "tags": ["confirmed"],
+      "lines": ["6/14–6/15（末晚）· Official WDW Hotel", "Hilton Diamond → 行政酒廊（早餐+傍晚小食）", "近 Disney & MCO · 泳池超赞"] }
   ],
   "days": [
     {
-      "id": "d1", "num": "D1", "date": "6/11 Thu", "theme": "抵达 MCO + 首晚住宿待定", "intensity": "low",
+      "id": "d1", "num": "D1", "date": "6/11 Thu", "theme": "抵达 MCO → 太空海岸（Hilton Garden Inn）", "intensity": "low",
       "intensityLabel": "低",
       "anchors": [
         { "text": "✈️ WN5061 MCO 落地 13:20", "tags": ["confirmed"] },
-        { "text": "🏨 6/11 首晚住宿待确认", "tags": ["tentative"] }
+        { "text": "🏨 Hilton Garden Inn Cape Canaveral（首晚）", "tags": ["confirmed"] }
       ],
       "timeline": [
         { "time": "1:20 PM", "desc": "MCO 落地", "tags": ["confirmed"] },
-        { "time": "下午", "desc": "取 SUV 租车（MCO）", "note": "取还日期待确认", "tags": ["tentative"] },
-        { "time": "傍晚", "desc": "前往首晚住宿（待定）+ 晚餐", "note": "住哪待你确认", "tags": ["tentative"] }
+        { "time": "下午", "desc": "取 SUV → 自驾 Cape Canaveral（~1hr）", "note": "取还日期待确认", "tags": ["tentative"] },
+        { "time": "傍晚", "desc": "Hilton 入住 + Cocoa Beach 一带晚餐", "tags": ["kid"] }
       ],
-      "food": ["晚餐：看首晚住哪再定｜待核实"],
-      "transport": ["自驾：Standard SUV（Chevy Equinox）MCO 取车；幼儿需安全座椅。"],
-      "planB": "落地早(1:20PM)，比原计划多半天；定了首晚住宿可加轻松活动。",
-      "risk": { "text": "6/11 首晚住宿未定 → 决定首日是否还去太空海岸/KSC，请尽快确认。", "tags": ["risk"] },
+      "food": ["晚餐：Cocoa Beach / Port Canaveral 海鲜（Rusty's / Fishlips / 幼儿向 Shark Pit）｜待核实"],
+      "transport": ["自驾：Standard SUV（Equinox）MCO 取车 → Cape Canaveral ~1hr；幼儿安全座椅。"],
+      "planB": "落地早(1:20PM)，下午到海岸还能逛逛沙滩/看港口邮轮。",
+      "risk": { "text": "5 人 + 幼儿安全座椅坐满 Equinox，行李偏挤，留意够不够。", "tags": ["risk"] },
       "nav": [
-        { "label": "MCO 机场 / SUV 取车", "url": "https://www.google.com/maps/dir/?api=1&destination=Orlando+International+Airport" }
+        { "label": "MCO 机场 / SUV 取车", "url": "https://www.google.com/maps/dir/?api=1&destination=Orlando+International+Airport" },
+        { "label": "Hilton Garden Inn Cape Canaveral", "url": "https://www.google.com/maps/dir/?api=1&destination=Hilton+Garden+Inn+Cape+Canaveral" }
       ]
     },
     {
-      "id": "d2", "num": "D2", "date": "6/12 Fri", "theme": "（待定 KSC）+ Disney 入住", "intensity": "mid",
+      "id": "d2", "num": "D2", "date": "6/12 Fri", "theme": "KSC 半天 → Disney 入住", "intensity": "mid",
       "intensityLabel": "中",
       "anchors": [
-        { "text": "🚀 KSC 半天（待定：仅当首晚住太空海岸才顺路）", "tags": ["tentative", "verify"] },
-        { "text": "🏨 Disney All-Star Sports check-in after 3PM", "tags": ["confirmed"] }
+        { "text": "🚀 KSC 9AM 基础票（火箭花园+巴士游+Atlantis）", "tags": ["tentative"] },
+        { "text": "🏨 Disney All-Star Movies check-in after 3PM", "tags": ["confirmed"] }
       ],
       "timeline": [
-        { "time": "上午", "desc": "（待定）KSC 半天 或 直接前往 Disney", "note": "看 6/11 首晚住哪", "tags": ["tentative"] },
-        { "time": "3:00 PM", "desc": "Disney 入住安顿", "tags": ["confirmed"] },
-        { "time": "下午", "desc": "泳池 / 休息", "tags": ["kid"] },
-        { "time": "晚", "desc": "晚餐：度假村食阁 或 Disney Springs" }
+        { "time": "上午", "desc": "Hilton 退房 → KSC（基础 Daily Admission）", "note": "含火箭花园·巴士游·Atlantis·Planet Play(幼儿)", "tags": ["kid"] },
+        { "time": "午间", "desc": "午餐 → 自驾 Disney（~1hr，幼儿车上午睡）", "tags": ["kid"] },
+        { "time": "3:00 PM", "desc": "Disney All-Star Movies 入住安顿", "tags": ["confirmed"] },
+        { "time": "下午/晚", "desc": "泳池 / 休息 · 晚餐(度假村 或 Disney Springs)", "tags": ["kid"] }
       ],
-      "food": ["晚餐：All-Star Sports「End Zone」食阁 / Disney Springs(免门票)｜待核实"],
-      "transport": ["自驾 → Disney（幼儿车上午睡）；到园后用 Disney 巴士。"],
-      "planB": "若不去 KSC → 上午轻松，早点到 Disney 适应。",
-      "risk": { "text": "KSC 是否成行取决于 6/11 首晚住哪；KSC 基础票即含火箭花园+巴士游+Atlantis。", "tags": ["verify"] },
+      "food": ["午餐：KSC 园内 或离园路上｜待核实", "晚餐：度假村食阁 / Disney Springs"],
+      "transport": ["自驾：Hilton→KSC ~20min；KSC→Disney ~1hr。到园后 Disney 巴士。"],
+      "planB": "幼儿累/天热 → KSC 只玩火箭花园+Atlantis，早点转 Disney。",
+      "risk": { "text": "KSC 半天 + 转场已是一天；带娃挑重点(巴士游≥2hr)。", "tags": ["risk"] },
       "nav": [
-        { "label": "(待定)Kennedy Space Center", "url": "https://www.google.com/maps/dir/?api=1&destination=Kennedy+Space+Center+Visitor+Complex" },
-        { "label": "Disney All-Star Sports", "url": "https://www.google.com/maps/dir/?api=1&destination=Disney+All-Star+Sports+Resort" }
+        { "label": "Kennedy Space Center", "url": "https://www.google.com/maps/dir/?api=1&destination=Kennedy+Space+Center+Visitor+Complex" },
+        { "label": "Disney All-Star Movies", "url": "https://www.google.com/maps/dir/?api=1&destination=Disney+All-Star+Movies+Resort" }
       ]
     },
     {
       "id": "d3", "num": "D3", "date": "6/13 Sat", "theme": "Disney Animal Kingdom（周末）", "intensity": "high",
-      "anchors": [ { "text": "🏨 Disney All-Star Sports（住）", "tags": ["confirmed"] } ],
+      "anchors": [ { "text": "🏨 Disney All-Star Movies（住）", "tags": ["confirmed"] } ],
       "timeline": [
-        { "time": "7:00–8:00", "desc": "早餐+出发（周末人多，越早越好 rope-drop）", "tags": ["kid"] },
-        { "time": "8:30–9:00", "desc": "进园：Animal Kingdom（离 All-Star Sports 最近）", "note": "票未确认·幼儿:Kilimanjaro Safaris / Lion King show", "tags": ["tentative"] },
-        { "time": "9:00–12:30", "desc": "上午主玩：幼儿向设施·动物" },
-        { "time": "12:30–1:30", "desc": "园内午餐" },
-        { "time": "1:30–3:30", "desc": "回度假村午睡/泳池（避正午+下午雷雨）", "tags": ["kid", "risk"] },
+        { "time": "7:00–8:00", "desc": "早餐+出发（周末人多 rope-drop）", "tags": ["kid"] },
+        { "time": "8:30–9:00", "desc": "进园：Animal Kingdom（离度假村最近）", "note": "票未确认·幼儿:Kilimanjaro Safaris / Lion King show", "tags": ["tentative"] },
+        { "time": "9:00–12:30", "desc": "上午主玩：动物 · 幼儿向设施" },
+        { "time": "1:30–3:30", "desc": "回度假村午睡/泳池（避正午+雷雨）", "tags": ["kid", "risk"] },
         { "time": "4:00–6:30", "desc": "二次进园 或 泳池（看体力）" },
         { "time": "6:30–8:00", "desc": "晚餐" }
       ],
       "food": ["午餐：AK quick-service（Satu'li Canteen / Flame Tree BBQ）｜待核实", "晚餐：度假村 / Disney Springs；想角色餐｜建议预约"],
       "transport": ["Disney 巴士（度假村↔乐园）；幼儿午睡回房方便。"],
-      "planB": "下午雷阵雨/周末人多 → 室内项目/度假村/泳池；幼儿累 → 砍二次进园。",
-      "risk": { "text": "周六 + 6月 ~87°F + 14–17点雷阵雨 → 早到 rope-drop、午后回房。", "tags": ["risk", "verify"] },
+      "planB": "下午雷阵雨/周末人多 → 室内/泳池；幼儿累 → 砍二次进园。",
+      "risk": { "text": "周六 + ~87°F + 14–17点雷阵雨 → 早到 rope-drop、午后回房。", "tags": ["risk", "verify"] },
       "nav": [
         { "label": "Animal Kingdom", "url": "https://www.google.com/maps/dir/?api=1&destination=Disney+Animal+Kingdom" },
-        { "label": "Disney All-Star Sports", "url": "https://www.google.com/maps/dir/?api=1&destination=Disney+All-Star+Sports+Resort" }
+        { "label": "Disney All-Star Movies", "url": "https://www.google.com/maps/dir/?api=1&destination=Disney+All-Star+Movies+Resort" }
       ]
     },
     {
-      "id": "d4", "num": "D4", "date": "6/14 Sun", "theme": "Disney Magic Kingdom（周末）", "intensity": "high",
-      "anchors": [ { "text": "🏨 Disney All-Star Sports（住）", "tags": ["confirmed"] } ],
-      "timeline": [
-        { "time": "全天", "desc": "Magic Kingdom（幼儿经典）：Fantasyland — it's a small world / Dumbo / Peter Pan / 小熊维尼 / 旋转木马", "note": "周日人多，rope-drop；MK 较大挑重点", "tags": ["kid"] },
-        { "time": "午后", "desc": "回房午睡 + 避雷雨窗口", "tags": ["kid"] }
-      ],
-      "food": ["午餐 MK quick-service（Pecos Bill / Cosmic Ray's / Pinocchio Village Haus）｜待核实", "晚餐：度假村 / Disney Springs"],
-      "transport": ["Disney 巴士。"],
-      "planB": "连续两个周末乐园日易累 → Day4 可半天园 + 半天泳池。",
-      "risk": { "text": "避免 D3+D4 连续高强度；周末更挤，至少一天留半日缓冲。", "tags": ["risk"] },
-      "nav": [
-        { "label": "Magic Kingdom", "url": "https://www.google.com/maps/dir/?api=1&destination=Magic+Kingdom+Park" },
-        { "label": "Disney All-Star Sports", "url": "https://www.google.com/maps/dir/?api=1&destination=Disney+All-Star+Sports+Resort" }
-      ]
-    },
-    {
-      "id": "d5", "num": "D5", "date": "6/15 Mon", "theme": "Disney 上午轻松 + 返程", "intensity": "mid",
-      "intensityLabel": "低中",
+      "id": "d4", "num": "D4", "date": "6/14 Sun", "theme": "Disney 退房 → Waldorf 享受", "intensity": "mid",
+      "intensityLabel": "中",
       "anchors": [
         { "text": "🏨 Disney 退房（约 11AM）", "tags": ["confirmed"] },
+        { "text": "🏨 Waldorf Astoria 入住 · Hilton Diamond 行政酒廊", "tags": ["confirmed"] }
+      ],
+      "timeline": [
+        { "time": "上午", "desc": "Disney 退房（11AM）；可选 Magic Kingdom 半天 或 Disney Springs", "note": "票/园待你定", "tags": ["tentative", "kid"] },
+        { "time": "下午", "desc": "入住 Waldorf Astoria → 行政酒廊 + 泳池放松", "note": "Diamond 行政酒廊傍晚小食", "tags": ["confirmed", "kid"] },
+        { "time": "晚", "desc": "Waldorf 一带晚餐 或 行政酒廊", "tags": ["kid"] }
+      ],
+      "food": ["行政酒廊（Diamond）：傍晚小食；晚餐 Waldorf/Bonnet Creek 一带｜待核实"],
+      "transport": ["Disney → Waldorf（Bonnet Creek，~15min）自驾。Waldorf valet 停车。"],
+      "planB": "你想坐等享受 → 6/14 主打 Waldorf 行政酒廊 + 泳池，MK 当可选；不勉强暴走。",
+      "risk": { "text": "换酒店 + 幼儿 → 别排太满；午后到 Waldorf 泡池 + 酒廊最舒服。", "tags": ["kid"] },
+      "nav": [
+        { "label": "(可选)Magic Kingdom", "url": "https://www.google.com/maps/dir/?api=1&destination=Magic+Kingdom+Park" },
+        { "label": "Waldorf Astoria Orlando", "url": "https://www.google.com/maps/dir/?api=1&destination=Waldorf+Astoria+Orlando" }
+      ]
+    },
+    {
+      "id": "d5", "num": "D5", "date": "6/15 Mon", "theme": "Waldorf 上午 + 返程", "intensity": "mid",
+      "intensityLabel": "低中",
+      "anchors": [
+        { "text": "🏨 Waldorf 退房", "tags": ["confirmed"] },
         { "text": "✈️ WN2659 MCO 起飞 18:10", "tags": ["confirmed"] }
       ],
       "timeline": [
-        { "time": "上午", "desc": "轻松：泳池 / Disney Springs / 短逛一个园" },
-        { "time": "~11:00", "desc": "退房，行李交 Bell Services 寄存" },
-        { "time": "中午–下午", "desc": "午餐 + 低强度活动（幼儿不暴走）", "tags": ["kid"] },
-        { "time": "~3:30 PM", "desc": "Disney 出发 → MCO 还 SUV", "note": "回程 6:10PM 比之前早，还车别拖", "tags": ["confirmed"] },
-        { "time": "~4:10 PM", "desc": "还车 + 进航站楼（起飞前 ~2hr）" },
+        { "time": "上午", "desc": "行政酒廊早餐 + Waldorf 泳池（Diamond 福利）", "tags": ["kid"] },
+        { "time": "中午", "desc": "退房；行李寄存 / 装车", "tags": ["confirmed"] },
+        { "time": "下午", "desc": "午餐 + 低强度（幼儿不暴走）", "tags": ["kid"] },
+        { "time": "~3:30 PM", "desc": "→ MCO 还 SUV（Waldorf 离 MCO ~20min）", "note": "回程 6:10PM，别拖", "tags": ["confirmed"] },
         { "time": "6:10 PM", "desc": "起飞回 MDW", "tags": ["confirmed"] }
       ],
-      "food": ["午餐 Disney Springs / 度假村；晚餐机场/飞机上｜待核实"],
-      "transport": ["回程 6:10PM 较早 → 约 3:30PM 离开 Disney、4PM 前还车，留足安检。"],
-      "risk": { "text": "回程比原计划早 2 小时 → 别贪玩，下午留足还车+安检 buffer。", "tags": ["risk", "kid"] },
+      "food": ["早餐：Waldorf 行政酒廊（Diamond）；午餐 Waldorf/Disney Springs；晚餐机场/机上｜待核实"],
+      "transport": ["Waldorf ~20min 到 MCO；回程 6:10PM 较早 → ~3:30PM 出发、4PM 前还车。"],
+      "risk": { "text": "回程比原计划早 → 上午舒服享受 Waldorf，下午留足还车+安检。", "tags": ["risk", "kid"] },
       "nav": [
         { "label": "MCO 机场（还 SUV + 航站楼）", "url": "https://www.google.com/maps/dir/?api=1&destination=Orlando+International+Airport" }
       ]
     }
   ],
   "questions": [
-    { "q": "6/11 首晚住哪？（抵达 6/11，Disney 6/12 才开始）", "label": "Q1", "badge": "最高优先" },
-    { "q": "Disney 乐园票买了吗？几日票？含 Park Hopper / Memory Maker？", "label": "Q2" },
+    { "q": "Disney 乐园票买了吗？几日票？含 Park Hopper / Memory Maker？", "label": "Q1", "badge": "最高优先" },
+    { "q": "6/14 退房后：去 Magic Kingdom 半天，还是直接 Waldorf 放松？", "label": "Q2" },
     { "q": "Disney 餐厅订了吗 / 要不要必抢清单？", "label": "Q3" }
   ],
   "verify": [
-    "天气（雷雨/高温微调节奏）· 航班准点 · 餐厅营业 · 乐园时间/巡游/烟花 · 租车取还日期",
-    "发射：6/11-15 目前无确定发射（mid-June 多为 NET-TBD）；想看临行盯 Space Coast Launches App",
-    "幼儿：推车 · 安全座椅 · 防晒/遮阳 · 补水零食 · 午睡安抚物 · 泳池装备"
+    "天气（雷雨/高温微调节奏）· 航班准点 · 餐厅营业 · 乐园时间 · 租车取还日期",
+    "发射：6/11-15 暂无确定发射；想看临行盯 Space Coast Launches App（住 Cape Canaveral 的 6/11 最佳）",
+    "幼儿：推车 · 安全座椅 · 防晒 · 补水零食 · 午睡安抚物 · 泳池装备"
   ]
 }
