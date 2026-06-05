@@ -88,21 +88,22 @@
       ]
     },
     {
-      "id": "d4", "num": "D4", "date": "6/14 Sun", "theme": "MK 上午 → Disney 退房 → Waldorf 享受", "intensity": "mid",
-      "intensityLabel": "中",
+      "id": "d4", "num": "D4", "date": "6/14 Sun", "theme": "Disney MK 玩一天 → 傍晚入住 Waldorf", "intensity": "high",
+      "intensityLabel": "高",
       "anchors": [
-        { "text": "🎢 Magic Kingdom（2 天票第 2 天）", "tags": ["confirmed"] },
-        { "text": "🏨 Disney 退房（约 11AM）→ Waldorf 入住 · Diamond 行政酒廊", "tags": ["confirmed"] }
+        { "text": "🎢 Magic Kingdom（2 天票第 2 天，玩一整天）", "tags": ["confirmed"] },
+        { "text": "🏨 Disney 退房（11AM）→ 傍晚入住 Waldorf · Diamond 行政酒廊", "tags": ["confirmed"] }
       ],
       "timeline": [
-        { "time": "上午", "desc": "Magic Kingdom（rope-drop，幼儿经典 Fantasyland）+ Disney 退房", "note": "退房可交 Bell Services", "tags": ["kid"] },
-        { "time": "下午", "desc": "入住 Waldorf Astoria → 行政酒廊 + 泳池放松", "note": "Diamond 行政酒廊傍晚小食", "tags": ["confirmed", "kid"] },
-        { "time": "晚", "desc": "Waldorf 一带晚餐 或 行政酒廊", "tags": ["kid"] }
+        { "time": "上午", "desc": "Disney All-Star 退房（11AM，行李交 Bell Services / 装车）", "tags": ["confirmed"] },
+        { "time": "白天", "desc": "Magic Kingdom 玩一整天（2 天票第 2 天，幼儿经典 Fantasyland）", "note": "周末 rope-drop；幼儿午睡=推车上", "tags": ["kid"] },
+        { "time": "傍晚", "desc": "入住 Waldorf Astoria → 行政酒廊 + 泳池放松", "note": "Diamond 傍晚小食", "tags": ["confirmed", "kid"] },
+        { "time": "晚", "desc": "Waldorf / Bonnet Creek 晚餐 或 行政酒廊", "tags": ["kid"] }
       ],
-      "food": ["行政酒廊（Diamond）：傍晚小食；晚餐 Waldorf/Bonnet Creek 一带｜待核实"],
-      "transport": ["Disney → Waldorf（Bonnet Creek，~15min）自驾。Waldorf valet 停车。"],
-      "planB": "你想坐等享受 → 6/14 主打 Waldorf 行政酒廊 + 泳池，MK 当可选；不勉强暴走。",
-      "risk": { "text": "换酒店 + 幼儿 → 别排太满；午后到 Waldorf 泡池 + 酒廊最舒服。", "tags": ["kid"] },
+      "food": ["行政酒廊（Diamond）傍晚小食；晚餐 Waldorf/Bonnet Creek 一带｜待核实"],
+      "transport": ["MK → Waldorf（Bonnet Creek，~20min）自驾；Waldorf valet 停车。"],
+      "planB": "幼儿无房午睡 → 推车睡 / 找室内凉快处；太累就早点收，傍晚去 Waldorf 泡池。",
+      "risk": { "text": "6/14 退房后到傍晚无房 → 幼儿午睡只能推车；AK+MK 连两天，别太拼。", "tags": ["risk", "kid"] },
       "nav": [
         { "label": "(可选)Magic Kingdom", "url": "https://www.google.com/maps/dir/?api=1&destination=Magic+Kingdom+Park" },
         { "label": "Waldorf Astoria Orlando", "url": "https://www.google.com/maps/dir/?api=1&destination=Waldorf+Astoria+Orlando" }
