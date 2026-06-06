@@ -35,7 +35,7 @@
         { "time": "下午", "desc": "取 SUV → 自驾 Cape Canaveral（~1hr）", "note": "取还日期待确认", "tags": ["tentative"] },
         { "time": "傍晚", "desc": "Hilton 入住 + Cocoa Beach 一带晚餐", "tags": ["kid"] }
       ],
-      "food": ["晚餐：Cocoa Beach / Port Canaveral 海鲜（Rusty's / Fishlips / 幼儿向 Shark Pit）｜待核实"],
+      "food": ["晚餐 Grills Seafood 4.3（港口看邮轮）/ Zarrella's 披萨 4.3（有高脚椅·哄娃）/ Fishlips 4.2", "都在 Port Canaveral，离 Hilton 5-10min；带娃 ~5pm 早去｜营业临行核"],
       "transport": ["自驾：Standard SUV（Equinox）MCO 取车 → Cape Canaveral ~1hr；幼儿安全座椅。"],
       "planB": "落地早(1:20PM)，下午到海岸还能逛逛沙滩/看港口邮轮。",
       "risk": { "text": "5 人 + 幼儿安全座椅坐满 Equinox，行李偏挤，留意够不够。", "tags": ["risk"] },
@@ -58,7 +58,7 @@
         { "time": "下午", "desc": "check-in 当天酒店赠送的 Disney 水乐园（幼儿戏水区）", "note": "免费 · 只此日", "tags": ["kid"] },
         { "time": "晚", "desc": "晚餐：度假村食阁 / Disney Springs" }
       ],
-      "food": ["午餐：KSC 园内 或离园路上｜待核实", "晚餐：度假村食阁 / Disney Springs"],
+      "food": ["早餐 Simply Delicious 4.7（Cocoa Beach，周五开）或 Hilton 酒店早餐", "午餐 KSC 园内 café（最省事）/ Sunrise Bread（路上）", "晚餐 度假村 World Premiere 食阁（App Mobile Order，走回房近）"],
       "transport": ["自驾：Hilton→KSC ~20min；KSC→Disney ~1hr。到园后 Disney 巴士。"],
       "planB": "当天最满 → KSC 精简(火箭花园+Atlantis)留体力；水乐园玩幼儿戏水区即可。",
       "risk": { "text": "KSC + 转场 + 水乐园 = 当天最满，对 2 岁娃偏重 → 精简 KSC、水乐园别久泡。", "tags": ["risk"] },
@@ -78,7 +78,7 @@
         { "time": "4:00–6:30", "desc": "二次进园 或 泳池（看体力）" },
         { "time": "6:30–8:00", "desc": "晚餐" }
       ],
-      "food": ["午餐：AK quick-service（Satu'li Canteen / Flame Tree BBQ）｜待核实", "晚餐：度假村 / Disney Springs；想角色餐｜建议预约"],
+      "food": ["午餐 Satu'li Canteen 4.5（自选碗·室内空调座，避暑）/ Pizzafari（披萨鸡块）", "★角色餐 Tusker House（Mickey，就在 AK）— 今天就订", "晚餐 The Polite Pig 4.2（Disney Springs）/ Rainforest Cafe（动画哄娃）"],
       "transport": ["Disney 巴士（度假村↔乐园）；幼儿午睡回房方便。"],
       "planB": "下午雷阵雨/周末人多 → 室内/泳池；幼儿累 → 砍二次进园。",
       "risk": { "text": "周六 + ~87°F + 14–17点雷阵雨 → 早到 rope-drop、午后回房。", "tags": ["risk", "verify"] },
@@ -100,7 +100,7 @@
         { "time": "傍晚", "desc": "入住 Waldorf Astoria → 行政酒廊 + 泳池放松", "note": "Diamond 傍晚小食", "tags": ["confirmed", "kid"] },
         { "time": "晚", "desc": "Waldorf / Bonnet Creek 晚餐 或 行政酒廊", "tags": ["kid"] }
       ],
-      "food": ["行政酒廊（Diamond）傍晚小食；晚餐 Waldorf/Bonnet Creek 一带｜待核实"],
+      "food": ["午餐 Cosmic Ray's（有动画表演哄娃）/ Pecos Bill", "★角色餐 Crystal Palace（小熊维尼，就在 MK）— 今天就订", "晚餐 La Luce（Bonnet Creek，意面哄娃）/ Waldorf 池边 grill；行政酒廊傍晚小食"],
       "transport": ["MK → Waldorf（Bonnet Creek，~20min）自驾；Waldorf valet 停车。"],
       "planB": "幼儿无房午睡 → 推车睡 / 找室内凉快处；太累就早点收，傍晚去 Waldorf 泡池。",
       "risk": { "text": "6/14 退房后到傍晚无房 → 幼儿午睡只能推车；AK+MK 连两天，别太拼。", "tags": ["risk", "kid"] },
@@ -123,7 +123,7 @@
         { "time": "~3:30 PM", "desc": "→ MCO 还 SUV（Waldorf 离 MCO ~20min）", "note": "回程 6:10PM，别拖", "tags": ["confirmed"] },
         { "time": "6:10 PM", "desc": "起飞回 MDW", "tags": ["confirmed"] }
       ],
-      "food": ["早餐：Waldorf 行政酒廊（Diamond）；午餐 Waldorf/Disney Springs；晚餐机场/机上｜待核实"],
+      "food": ["早餐 Waldorf 行政酒廊（Diamond 免费）", "午餐 Disney Springs（回程路上）/ Waldorf；晚餐机场/机上"],
       "transport": ["Waldorf ~20min 到 MCO；回程 6:10PM 较早 → ~3:30PM 出发、4PM 前还车。"],
       "risk": { "text": "回程比原计划早 → 上午舒服享受 Waldorf，下午留足还车+安检。", "tags": ["risk", "kid"] },
       "nav": [
