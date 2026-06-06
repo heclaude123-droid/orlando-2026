@@ -42,6 +42,11 @@
       "nav": [
         { "label": "MCO 机场 / SUV 取车", "url": "https://www.google.com/maps/dir/?api=1&destination=Orlando+International+Airport" },
         { "label": "Hilton Garden Inn Cape Canaveral", "url": "https://www.google.com/maps/dir/?api=1&destination=Hilton+Garden+Inn+Cape+Canaveral" }
+      ],
+      "restaurants": [
+        { "label": "Grills Seafood", "url": "https://www.google.com/maps/dir/?api=1&destination=Grills+Seafood+Deck+Tiki+Bar+Port+Canaveral" },
+        { "label": "Zarrella's 披萨", "url": "https://www.google.com/maps/dir/?api=1&destination=Zarrellas+Italian+Wood+Fired+Pizza+Cape+Canaveral+FL" },
+        { "label": "Fishlips", "url": "https://www.google.com/maps/dir/?api=1&destination=Fishlips+Waterfront+Port+Canaveral" }
       ]
     },
     {
@@ -65,6 +70,9 @@
       "nav": [
         { "label": "Kennedy Space Center", "url": "https://www.google.com/maps/dir/?api=1&destination=Kennedy+Space+Center+Visitor+Complex" },
         { "label": "Disney All-Star Movies", "url": "https://www.google.com/maps/dir/?api=1&destination=Disney+All-Star+Movies+Resort" }
+      ],
+      "restaurants": [
+        { "label": "Simply Delicious 早餐", "url": "https://www.google.com/maps/dir/?api=1&destination=Simply+Delicious+Cafe+Bakery+Cocoa+Beach" }
       ]
     },
     {
@@ -85,6 +93,10 @@
       "nav": [
         { "label": "Animal Kingdom", "url": "https://www.google.com/maps/dir/?api=1&destination=Disney+Animal+Kingdom" },
         { "label": "Disney All-Star Movies", "url": "https://www.google.com/maps/dir/?api=1&destination=Disney+All-Star+Movies+Resort" }
+      ],
+      "restaurants": [
+        { "label": "The Polite Pig", "url": "https://www.google.com/maps/dir/?api=1&destination=The+Polite+Pig+Disney+Springs" },
+        { "label": "Rainforest Cafe", "url": "https://www.google.com/maps/dir/?api=1&destination=Rainforest+Cafe+Disney+Springs" }
       ]
     },
     {
@@ -105,8 +117,11 @@
       "planB": "幼儿无房午睡 → 推车睡 / 找室内凉快处；太累就早点收，傍晚去 Waldorf 泡池。",
       "risk": { "text": "6/14 退房后到傍晚无房 → 幼儿午睡只能推车；AK+MK 连两天，别太拼。", "tags": ["risk", "kid"] },
       "nav": [
-        { "label": "(可选)Magic Kingdom", "url": "https://www.google.com/maps/dir/?api=1&destination=Magic+Kingdom+Park" },
+        { "label": "Magic Kingdom", "url": "https://www.google.com/maps/dir/?api=1&destination=Magic+Kingdom+Park" },
         { "label": "Waldorf Astoria Orlando", "url": "https://www.google.com/maps/dir/?api=1&destination=Waldorf+Astoria+Orlando" }
+      ],
+      "restaurants": [
+        { "label": "La Luce", "url": "https://www.google.com/maps/dir/?api=1&destination=La+Luce+Signia+Hilton+Bonnet+Creek+Orlando" }
       ]
     },
     {
@@ -128,6 +143,9 @@
       "risk": { "text": "回程比原计划早 → 上午舒服享受 Waldorf，下午留足还车+安检。", "tags": ["risk", "kid"] },
       "nav": [
         { "label": "MCO 机场（还 SUV + 航站楼）", "url": "https://www.google.com/maps/dir/?api=1&destination=Orlando+International+Airport" }
+      ],
+      "restaurants": [
+        { "label": "Disney Springs", "url": "https://www.google.com/maps/dir/?api=1&destination=Disney+Springs+Orlando" }
       ]
     }
   ],
