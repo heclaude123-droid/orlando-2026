@@ -5,7 +5,7 @@
     "nights": "5 天 4 晚",
     "travelers": "4 大人 + 1 幼儿",
     "lastUpdated": "2026-06-04",
-    "summaryLine": "✈️ MDW↔MCO · 🚗 SUV · 🏨 Cape Canaveral → Disney → Waldorf",
+    "summaryLine": "✈️ MDW↔MCO · 🚗 Minivan 自驾 · 🏨 Cape Canaveral → Disney → Waldorf",
     "privacyNote": "公开分享版：已隐去确认号 / 金额 / 全名。"
   },
   "bookings": [
@@ -13,8 +13,8 @@
       "lines": ["WN 5061 · 6/11 周四", "MDW 9:40AM → MCO 1:20PM", "nonstop 2h40m · Basic"] },
     { "icon": "✈️", "title": "回程", "tags": ["confirmed"],
       "lines": ["WN 2659 · 6/15 周一", "MCO 6:10PM → MDW 8:10PM", "nonstop 3h0m · Choice"] },
-    { "icon": "🚗", "title": "租车 Standard SUV", "tags": ["confirmed"],
-      "lines": ["Chevrolet Equinox or similar（5 座）", "MCO 取还 · 取还日期待确认", "需备幼儿安全座椅"] },
+    { "icon": "🚗", "title": "租车 Minivan", "tags": ["confirmed"],
+      "lines": ["Chrysler Pacifica or similar（7 座·大行李）", "MCO 取还 · 取还日期待确认", "5 人+行李宽裕；需备幼儿安全座椅"] },
     { "icon": "🏨", "title": "Hilton Garden Inn Cape Canaveral", "tags": ["confirmed"],
       "lines": ["6/11–6/12（首晚）· 太空海岸", "→ 6/12 顺路 Kennedy Space Center"] },
     { "icon": "🏨", "title": "Disney's All-Star Movies", "tags": ["confirmed"],
@@ -32,15 +32,15 @@
       ],
       "timeline": [
         { "time": "1:20 PM", "desc": "MCO 落地", "tags": ["confirmed"] },
-        { "time": "下午", "desc": "取 SUV → 自驾 Cape Canaveral（~1hr）", "note": "取还日期待确认", "tags": ["tentative"] },
+        { "time": "下午", "desc": "取 minivan → 自驾 Cape Canaveral（~1hr）", "note": "取还日期待确认", "tags": ["tentative"] },
         { "time": "傍晚", "desc": "Hilton 入住 + Cocoa Beach 一带晚餐", "tags": ["kid"] }
       ],
       "food": ["晚餐 Grills Seafood 4.3（港口看邮轮）/ Zarrella's 披萨 4.3（有高脚椅·哄娃）/ Fishlips 4.2", "都在 Port Canaveral，离 Hilton 5-10min；带娃 ~5pm 早去｜营业临行核"],
-      "transport": ["自驾：Standard SUV（Equinox）MCO 取车 → Cape Canaveral ~1hr；幼儿安全座椅。"],
+      "transport": ["自驾：Minivan（7 座）MCO 取车 → Cape Canaveral ~1hr；幼儿需安全座椅。"],
       "planB": "落地早(1:20PM)，下午到海岸还能逛逛沙滩/看港口邮轮。",
-      "risk": { "text": "5 人 + 幼儿安全座椅坐满 Equinox，行李偏挤，留意够不够。", "tags": ["risk"] },
+      "risk": { "text": "已升 Minivan，5 人+行李宽裕；幼儿安全座椅记得装好，落地后别赶。", "tags": ["kid"] },
       "nav": [
-        { "label": "MCO 机场 / SUV 取车", "url": "https://www.google.com/maps/dir/?api=1&destination=Orlando+International+Airport" },
+        { "label": "MCO 机场 / 取车", "url": "https://www.google.com/maps/dir/?api=1&destination=Orlando+International+Airport" },
         { "label": "Hilton Garden Inn Cape Canaveral", "url": "https://www.google.com/maps/dir/?api=1&destination=Hilton+Garden+Inn+Cape+Canaveral" }
       ],
       "restaurants": [
@@ -135,14 +135,14 @@
         { "time": "上午", "desc": "行政酒廊早餐 + Waldorf 泳池（Diamond 福利）", "tags": ["kid"] },
         { "time": "中午", "desc": "退房；行李寄存 / 装车", "tags": ["confirmed"] },
         { "time": "下午", "desc": "午餐 + 低强度（幼儿不暴走）", "tags": ["kid"] },
-        { "time": "~3:30 PM", "desc": "→ MCO 还 SUV（Waldorf 离 MCO ~20min）", "note": "回程 6:10PM，别拖", "tags": ["confirmed"] },
+        { "time": "~3:30 PM", "desc": "→ MCO 还 minivan（Waldorf 离 MCO ~20min）", "note": "回程 6:10PM，别拖", "tags": ["confirmed"] },
         { "time": "6:10 PM", "desc": "起飞回 MDW", "tags": ["confirmed"] }
       ],
       "food": ["早餐 Waldorf 行政酒廊（Diamond 免费）", "午餐 Disney Springs（回程路上）/ Waldorf；晚餐机场/机上"],
       "transport": ["Waldorf ~20min 到 MCO；回程 6:10PM 较早 → ~3:30PM 出发、4PM 前还车。"],
       "risk": { "text": "回程比原计划早 → 上午舒服享受 Waldorf，下午留足还车+安检。", "tags": ["risk", "kid"] },
       "nav": [
-        { "label": "MCO 机场（还 SUV + 航站楼）", "url": "https://www.google.com/maps/dir/?api=1&destination=Orlando+International+Airport" }
+        { "label": "MCO 机场（还车 + 航站楼）", "url": "https://www.google.com/maps/dir/?api=1&destination=Orlando+International+Airport" }
       ],
       "restaurants": [
         { "label": "Disney Springs", "url": "https://www.google.com/maps/dir/?api=1&destination=Disney+Springs+Orlando" }
