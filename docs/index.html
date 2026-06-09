@@ -45,6 +45,7 @@
   .t-risk{color:var(--c-risk);background:var(--c-risk-bg)}
   .t-kid{color:var(--c-kid);background:var(--c-kid-bg)}
   .t-resv{color:var(--c-resv);background:var(--c-resv-bg)}
+  .t-split{color:#7c3aed;background:#f3e8ff}
   .card{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:12px;overflow:hidden;box-shadow:0 1px 3px rgba(30,50,90,.05)}
   .booking{padding:13px 15px}
   .booking .b-title{font-weight:700;font-size:16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
@@ -113,7 +114,7 @@
 <footer><span class="updated" id="foot">加载中…</span></footer>
 
 <script>
-var TAGS={confirmed:["t-confirmed","已确认"],tentative:["t-tentative","暂定"],verify:["t-verify","待核实"],risk:["t-risk","风险"],kid:["t-kid","幼儿"],resv:["t-resv","建议预约"]};
+var TAGS={confirmed:["t-confirmed","已确认"],tentative:["t-tentative","暂定"],verify:["t-verify","待核实"],risk:["t-risk","风险"],kid:["t-kid","幼儿"],resv:["t-resv","建议预约"],split:["t-split","👥 分头"]};
 var INTEN={low:["i-low","低"],mid:["i-mid","中高"],high:["i-high","高"]};
 
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
